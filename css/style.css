@@ -1088,7 +1088,7 @@ button, a {
    ========================================================================== */
 .karyakram-section {
   padding: clamp(3.5rem, 7vw, 5.5rem) 0;
-  background: radial-gradient(circle at 50% 50%, #460916 0%, #1e0309 100%);
+  background: radial-gradient(circle at 50% 50%, #64182a 0%, #380b16 100%);
   border-top: 1px solid rgba(212, 175, 55, 0.3);
   border-bottom: 1px solid rgba(212, 175, 55, 0.3);
   position: relative;
