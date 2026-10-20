@@ -75,7 +75,7 @@ body {
   min-height: 100vh;
   min-height: 100dvh;
   position: relative;
-  background: radial-gradient(circle at 50% 20%, #4f0a1a 0%, #29040c 55%, #150206 100%);
+  background: radial-gradient(circle at 50% 20%, #5b1526 0%, #3b0d18 55%, #24070e 100%);
   background-attachment: fixed;
   overflow-x: hidden;
   width: 100%;
