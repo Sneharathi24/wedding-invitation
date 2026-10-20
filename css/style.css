@@ -1893,3 +1893,12 @@ button, a {
   z-index: 1000;
 }
 
+.qualification {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.bride-name {
+  display: inline-block;
+}
+
