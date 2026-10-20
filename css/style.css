@@ -1497,43 +1497,50 @@ button, a {
     padding-bottom: max(6rem, calc(env(safe-area-inset-bottom) + 5.5rem));
   }
 
-
+   
 .couples-grid {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
     width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
 }
 
 .couple-box {
     width: 100%;
     max-width: 650px;
-    min-width: 0;
     box-sizing: border-box;
     padding: 1.5rem 0.75rem;
     text-align: center;
 }
 
 .couple-names {
-    font-size: clamp(1.25rem, 5vw, 2.5rem);
+    font-size: clamp(1.2rem, 5vw, 2.5rem);
     line-height: 1.3;
     white-space: nowrap;
 }
 
-.couple-names .amp {
-    font-size: inherit;
-    margin: 0 0.15rem;
-}
-
 .couples-separator {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0.25rem 0;
+    transform: none;
 }
 
 .couples-separator-line {
-  height: 25px;
+    width: 2px;
+    height: 25px;
+}
+
+.couples-separator-symbol {
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
   .story-content.active {
