@@ -1,7 +1,7 @@
 /**
  * ROYAL RAJASTHANI WEDDING INVITATION - APPLICATION JAVASCRIPT
  * Couples: Monika & Harshitji • Nikita & Shivamji
- * Date: 02 December 2026 | THE GREAT BAHUBALI RESORT, BALOTRA
+ * Date: 01 December 2026 | THE GRAND BAHUBALI RESORT, BALOTRA
  * Enhanced for all Android (Samsung, Oppo, Vivo, OnePlus, Nothing) & iPhone models
  */
 
@@ -186,9 +186,9 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* ==========================================================================
-     3. LIVE ROYAL COUNTDOWN CLOCK (Target: 02 Dec 2026, 09:00 AM IST)
+     3. LIVE ROYAL COUNTDOWN CLOCK (Target: 01 Dec 2026, 09:00 AM IST)
      ========================================================================== */
-  const weddingDate = new Date('2026-12-02T09:00:00+05:30').getTime();
+  const weddingDate = new Date('2026-12-01T09:00:00+05:30').getTime();
 
   const daysEl = document.getElementById('days');
   const hoursEl = document.getElementById('hours');
@@ -228,9 +228,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const calDetails = {
     title: 'Wedding of Monika & Harshitji, Nikita & Shivamji',
-    start: '20261201T043000Z',
+    start: '20261130T043000Z',
     end: '20261202T163000Z',
-    location: 'THE GREAT BAHUBALI RESORT, BALOTRA, Rajasthan 344022',
+    location: 'THE GRAND BAHUBALI RESORT, BALOTRA, Rajasthan 344022',
     description: 'Together with our families, we cordially invite you to celebrate the auspicious double wedding of our beloved daughters Monika & Harshitji and Nikita & Shivamji at THE GREAT BAHUBALI RESORT, BALOTRA.'
   };
 
@@ -326,11 +326,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const btnCopyLink = document.getElementById('btn-copy-link');
 
   const shareText = `🕊️ *Shubh Vivah Nimantran* 🕊️\n\n` +
-    `Together with our families, we cordially invite you to celebrate the auspicious double wedding of our beloved daughters:\n\n` +
+    `Together with our families, we cordially invite you to celebrate the auspicious wedding of our beloved daughters:\n\n` +
     `✨ *Monika & Harshitji*\n` +
     `✨ *Nikita & Shivamji*\n\n` +
     `📅 *Wedding Date:* 02 December 2026\n` +
-    `📍 *Venue:* THE GREAT BAHUBALI RESORT, BALOTRA\n\n` +
+    `📍 *Venue:* THE GRAND BAHUBALI RESORT, BALOTRA\n\n` +
     `Tap here to view the complete digital invitation & मांगलिक कार्यक्रम:\n` +
     window.location.href;
 
