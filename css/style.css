@@ -1497,19 +1497,36 @@ button, a {
     padding-bottom: max(6rem, calc(env(safe-area-inset-bottom) + 5.5rem));
   }
 
-  .couples-grid {
-    grid-template-columns: 1fr;
-    gap: 1.2rem;
-  }
+.couples-grid {
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  gap: 0.45rem;
+  width: 100%;
+}
 
-  .couples-separator {
-    transform: rotate(90deg);
-    margin: 0.4rem 0;
-  }
+.couple-box {
+  min-width: 0;
+  padding: 1rem 0.35rem;
+  overflow-wrap: anywhere;
+}
 
-  .couples-separator-line {
-    height: 25px;
-  }
+.couple-names {
+  font-size: clamp(0.8rem, 3.5vw, 1.25rem);
+  line-height: 1.4;
+}
+
+.couple-names .amp {
+  font-size: 1rem;
+  margin: 0 0.1rem;
+}
+
+.couples-separator {
+  transform: none;
+  margin: 0;
+}
+
+.couples-separator-line {
+  height: 25px;
+}
 
   .story-content.active {
     grid-template-columns: 1fr;
