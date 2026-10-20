@@ -228,10 +228,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const calDetails = {
     title: 'Wedding of Monika & Harshitji, Nikita & Shivamji',
-    start: '20261130T043000Z',
+    start: '20261130T123000Z',
     end: '20261202T163000Z',
     location: 'THE GRAND BAHUBALI RESORT, BALOTRA, Rajasthan 344022',
-    description: 'Together with our families, we cordially invite you to celebrate the auspicious double wedding of our beloved daughters Monika & Harshitji and Nikita & Shivamji at THE GREAT BAHUBALI RESORT, BALOTRA.'
+    description: 'Together with our families, we cordially invite you to celebrate the auspicious wedding of our beloved daughters Monika & Harshitji and Nikita & Shivamji at THE GREAT BAHUBALI RESORT, BALOTRA.'
   };
 
   if (btnGoogleCal) {
