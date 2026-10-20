@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Cross-device mobile viewport with safe-area support -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+  <title>Wedding Invitation | Monika & Harshitji • Nikita & Shivamji</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Royal Wedding Invitation for Monika & Harshitji and Nikita & Shivamji on 02 December 2026 at THE GREAT BAHUBALI RESORT, BALOTRA. Open our digital envelope to celebrate with us!">
+  <meta property="og:title" content="Royal Wedding Invitation • Monika & Harshitji | Nikita & Shivamji">
+  <meta property="og:description" content="Two sisters, two love stories, one grand royal celebration! 02 December 2026 at THE GREAT BAHUBALI RESORT, BALOTRA.">
+  <meta property="og:image" content="./assets/images/resort_palace.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Mobile Browser Theme & PWA Status Bar -->
+  <meta name="theme-color" content="#1e050a">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Great+Vibes&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Rozha+One&family=Yatra+One&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <!-- Subtle Floating Canvas for Gentle Rose & Marigold Petals -->
+  <canvas id="petals-canvas"></canvas>
+
+  <!-- Toast Notification -->
+  <div class="toast-msg" id="toast-msg" role="status" aria-live="polite"></div>
+
+  <!-- =========================================================================
+       SCREEN 1: THE INTERACTIVE DIGITAL ENVELOPE (Cover & Unboxing)
+       ========================================================================= -->
+  <header class="envelope-screen" id="envelope-screen">
+    <div class="envelope-header">
+      <div class="royal-badge">
+        <span>✨</span> Shubh Vivah Nimantran <span>✨</span>
+      </div>
+      <h1 class="envelope-title">We Are Getting Married</h1>
+      <p class="envelope-couples-sub">
+        <span>Monika &amp; Harshitji</span> &bull; <span>Nikita &amp; Shivamji</span>
+      </p>
+    </div>
+
+    <!-- 3D Interactive Envelope Stage -->
+    <div class="envelope-stage" id="envelope-stage" title="Click wax seal or envelope to open">
+      <div class="envelope-wrapper">
+        <!-- Inside Envelope Back & Deckle Card -->
+        <div class="envelope-back"></div>
+
+        <div class="envelope-card" id="envelope-card">
+          <div class="envelope-card-header">
+            <span class="envelope-card-om">卐</span>
+            <div>॥ श्री गणेशाय नमः ॥</div>
+          </div>
+
+          <div class="envelope-card-names">
+            <div class="envelope-card-couple">Monika &amp; Harshitji</div>
+            <span class="envelope-card-and">&amp;</span>
+            <div class="envelope-card-couple">Nikita &amp; Shivamji</div>
+          </div>
+
+          <div class="envelope-card-date">
+            Wednesday, 02 December 2026
+          </div>
+
+          <div class="envelope-card-venue">
+            📍 THE GREAT BAHUBALI RESORT, BALOTRA
+          </div>
+        </div>
+
+        <!-- 3D Envelope Flaps -->
+        <div class="envelope-left-pocket"></div>
+        <div class="envelope-right-pocket"></div>
+        <div class="envelope-bottom-pocket"></div>
+        <div class="envelope-top-flap" id="envelope-top-flap"></div>
+
+        <!-- Royal Embossed Wax Seal -->
+        <div class="wax-seal" id="wax-seal" role="button" aria-label="Open wedding invitation envelope">
+          <div class="wax-seal-inner">
+            <span class="wax-seal-icon">卐</span>
+            <span class="wax-seal-text">M&amp;H • N&amp;S</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tap Hint Instruction -->
+    <div class="tap-instruction" id="tap-instruction">
+      <div class="tap-prompt">
+        <span>✨</span> Tap Wax Seal to Unseal <span>✨</span>
+      </div>
+    </div>
+
+    <!-- CTA Revealed After Opening -->
+    <div class="enter-wedding-cta" id="enter-wedding-cta">
+      <a href="#hero-section" class="btn-royal-gold" id="btn-enter-wedding">
+        <span>🕊️</span> Enter Our Wedding <span>🕊️</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       SCREEN 2: ROYAL WEDDING CELEBRATION EXPERIENCE
+       ========================================================================= -->
+  <main class="wedding-main-site" id="wedding-main-site">
+    
+    <!-- Sticky Royal Navigation Bar (Desktop & Tablet) -->
+    <nav class="royal-nav" aria-label="Main Navigation">
+      <div class="nav-brand">
+        <span>👑</span> M&amp;H • N&amp;S
+      </div>
+      <ul class="nav-links">
+        <li><a href="#hero-section">Our Wedding</a></li>
+        <li><a href="#countdown-section">Date</a></li>
+        <li><a href="#story-section">Our Story</a></li>
+        <li><a href="#karyakram-section">मांगलिक कार्यक्रम</a></li>
+        <li><a href="#venue-section">Venue</a></li>
+        <li><a href="#share-section">Share</a></li>
+      </ul>
+    </nav>
+
+    <!-- SECTION 1: AUSPICIOUS INVOCATION & ROYAL HERO -->
+    <section class="hero-section" id="hero-section">
+      <div class="container">
+        
+        <!-- Sacred Ganesha Invocation -->
+        <div class="ganesha-invocation">
+          <div class="ganesha-crest">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2C10.5 2 9 3 9 4.5C9 5.5 9.5 6.2 10.2 6.6C8 7.3 6.5 9.2 6.5 11.5C6.5 13.8 8 15.7 10.2 16.4C9.5 16.8 9 17.5 9 18.5C9 20 10.5 21 12 21C13.5 21 15 20 15 18.5C15 17.5 14.5 16.8 13.8 16.4C16 15.7 17.5 13.8 17.5 11.5C17.5 9.2 16 7.3 13.8 6.6C14.5 6.2 15 5.5 15 4.5C15 3 13.5 2 12 2ZM12 4C12.6 4 13 4.4 13 5C13 5.6 12.6 6 12 6C11.4 6 11 5.6 11 5C11 4.4 11.4 4 12 4ZM12 8C13.9 8 15.5 9.6 15.5 11.5C15.5 13.4 13.9 15 12 15C10.1 15 8.5 13.4 8.5 11.5C8.5 9.6 10.1 8 12 8ZM12 17C12.6 17 13 17.4 13 18C13 18.6 12.6 19 12 19C11.4 19 11 18.6 11 18C11 17.4 11.4 17 12 17Z"/>
+            </svg>
+          </div>
+          <div class="sanskrit-shloka">
+            ॥ श्री गणेशाय नमः ॥<br>
+            वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ। निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा॥
+          </div>
+          <p class="sanskrit-sub">With the divine grace of Almighty &amp; blessings of our elders</p>
+        </div>
+
+        <div class="hero-announcement">
+          <!-- Exact Invitation Line requested by user -->
+          <p class="hero-family-presents">
+            Together with our families, we cordially invite you to celebrate the auspicious wedding of our beloved daughters,
+          </p>
+
+          <!-- The Two Sister Couples -->
+          <div class="wedding-showcase">
+            <div class="couples-grid">
+              
+              <!-- Couple 1 -->
+              <div class="couple-box">
+                <div class="couple-role">Bride &amp; Groom</div>
+                <div class="couple-names">
+                  Monika <span class="amp">&amp;</span> <span class="groom">Harshitji</span>
+                </div>
+              </div>
+
+              <!-- Royal Badge Separator -->
+              <div class="couples-separator">
+                <div class="couples-separator-line"></div>
+                <div class="couples-separator-badge">&amp;</div>
+                <div class="couples-separator-line"></div>
+              </div>
+
+              <!-- Couple 2 -->
+              <div class="couple-box">
+                <div class="couple-role">Bride &amp; Groom</div>
+                <div class="couple-names">
+                  Nikita <span class="amp">&amp;</span> <span class="groom">Shivamji</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Royal Art Frame Illustration -->
+          <div class="hero-art-container">
+            <img src="./assets/images/couples_art.jpg" alt="Monika & Harshitji, Nikita & Shivamji Royal Wedding Celebration" class="hero-art-img" loading="eager">
+            <p class="hero-art-caption">Two Sister Brides • Two Sacred Vows • One Grand Celebration</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 2: LIVE ROYAL COUNTDOWN CLOCK -->
+    <section class="countdown-section" id="countdown-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Save The Date</span>
+          <h2 class="section-title">Wednesday, 02 December 2026</h2>
+          <div class="section-divider">
+            <span class="section-divider-icon">⏳</span>
+          </div>
+          <p class="section-sub">Counting every precious moment until the sacred Panigrahan Sanskar at THE GREAT BAHUBALI RESORT, BALOTRA</p>
+        </div>
+
+        <div class="countdown-box" role="timer" aria-live="off">
+          <div class="countdown-unit">
+            <div class="countdown-number" id="days">00</div>
+            <div class="countdown-label">Days</div>
+          </div>
+          <div class="countdown-unit">
+            <div class="countdown-number" id="hours">00</div>
+            <div class="countdown-label">Hours</div>
+          </div>
+          <div class="countdown-unit">
+            <div class="countdown-number" id="minutes">00</div>
+            <div class="countdown-label">Minutes</div>
+          </div>
+          <div class="countdown-unit">
+            <div class="countdown-number" id="seconds">00</div>
+            <div class="countdown-label">Seconds</div>
+          </div>
+        </div>
+
+        <div class="countdown-actions">
+          <button class="btn-secondary-gold" id="btn-google-calendar">
+            <span>📅</span> Add to Google Calendar
+          </button>
+          <button class="btn-secondary-gold" id="btn-ical-download">
+            <span>📥</span> Download Calendar (.ics)
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: OUR STORY & THE SISTER BOND -->
+    <section class="story-section" id="story-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">A Celebration of Love &amp; Sisterhood</span>
+          <h2 class="section-title">Our Story</h2>
+          <div class="section-divider">
+            <span class="section-divider-icon">❤️</span>
+          </div>
+        </div>
+
+        <div class="story-card-wrapper">
+          <p class="story-lead">
+            “Two sisters who grew up sharing every secret, every smile, and every dream. Today, hand-in-hand, we step into our forever journeys with <span>Harshitji</span> and <span>Shivamji</span>.”
+          </p>
+
+          <!-- Story Tabs -->
+          <div class="story-tabs">
+            <button class="story-tab-btn active" data-tab="story-sisterhood">The Sister Bond</button>
+            <button class="story-tab-btn" data-tab="story-monika">Monika &amp; Harshitji</button>
+            <button class="story-tab-btn" data-tab="story-nikita">Nikita &amp; Shivamji</button>
+          </div>
+
+          <!-- Tab 1: The Sisterhood -->
+          <div class="story-content active" id="story-sisterhood">
+            <div class="story-text-col">
+              <p>
+                From playful childhood afternoons to dressing up in matching ethnic ghagras, Monika and Nikita have been each other’s greatest anchors. Their laughter has filled our home with endless warmth and joy.
+              </p>
+              <div class="story-quote">
+                “Having your sister by your side at the mandap is a blessing written by the stars themselves.”
+              </div>
+              <p>
+                As both sisters embark on life’s most sacred chapter under the royal arches of THE GREAT BAHUBALI RESORT, BALOTRA, their bond brings happiness to our home and unites our families in a beautiful celebration of love and togetherness.             
+             </p>
+            </div>
+            <div class="story-highlight-card">
+              
+            <div class="story-highlight-card">
+              <h4>Do Behnein, Do Naye Safar</h4>
+                <p>
+                  “Two sisters, two beautiful journeys, and hearts united in joy.
+                  Join us in blessing Monika &amp; Harshitji and Nikita &amp; Shivamji
+                  as they begin their new chapters of love, togetherness, and lifelong happiness.”
+                </p>
+            </div>
+          </div>
+
+
+          <!-- Tab 2: Monika & Harshitji -->
+          <div class="story-content" id="story-monika">
+            <div class="story-text-col">
+              <p>
+                Monika’s gentle grace and Harshitji’s steadfast devotion create a harmony that feels timeless. What began with heartfelt family conversations blossomed into deep mutual respect and unspoken understanding.
+              </p>
+              <div class="story-quote">
+                “In Harshitji, Monika found a steadfast companion who turns every ordinary moment into a cherished memory.”
+              </div>
+              <p>
+                Together, they step forward into a lifetime of shared dreams, laughter, and lifelong devotion.
+              </p>
+            </div>
+            <div class="story-highlight-card">
+              <h4>Monika &amp; Harshitji</h4>
+              <p>
+                “With hearts entwined, we look forward to receiving your warmest blessings as we take our seven sacred pheras.”
+              </p>
+            </div>
+          </div>
+
+          <!-- Tab 3: Nikita & Shivamji -->
+          <div class="story-content" id="story-nikita">
+            <div class="story-text-col">
+              <p>
+                Nikita’s radiant zest for life meets Shivamji’s gentle warmth and enduring kindness. Their connection is filled with genuine laughter, shared values, and an inspiring enthusiasm for life’s grand adventure.
+              </p>
+              <div class="story-quote">
+                “Shivamji brought a calm certainty to Nikita’s vibrant world, creating a bond rooted in love and trust.”
+              </div>
+              <p>
+                They are thrilled to celebrate this milestone surrounded by their closest friends, elders, and beloved family.
+              </p>
+            </div>
+            <div class="story-highlight-card">
+              <h4>Nikita &amp; Shivamji</h4>
+              <p>
+                “Your gracious presence will make our union truly unforgettable. We cannot wait to celebrate this special day with you!”
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: MANGLIK KARYAKRAM (Exact Details from the photo) -->
+    <section class="karyakram-section" id="karyakram-section">
+      <div class="container">
+        
+        <div class="karyakram-header">
+          <div class="karyakram-om-crest">卐</div>
+          <h2 class="karyakram-main-title">॥ मांगलिक कार्यक्रम ॥</h2>
+          <div class="karyakram-title-ornament">
+            <span>✤</span> ❖ <span>✤</span>
+          </div>
+          <p class="karyakram-sub-title">Auspicious Wedding Ceremonies</p>
+        </div>
+
+        <div class="karyakram-grid">
+          
+          <!-- Event 1: कुंकुम -->
+          <div class="karyakram-card">
+            <div class="karyakram-card-inner">
+              <div class="karyakram-event-name">कुंकुम</div>
+              <div class="karyakram-event-eng">Kumkum</div>
+              <div class="karyakram-ornament-divider">❧ ✦ ❧</div>
+              <div class="karyakram-date-hindi">बुधवार, 11 नवम्बर 2026</div>
+              <div class="karyakram-date-eng">Wednesday, 11 November 2026</div>
+              <div class="karyakram-time-box">
+                <span class="karyakram-time-hindi">सायं 5:15 बजे</span>
+                <span class="karyakram-time-eng">(5:15 PM)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event 2: विनायक एवं घृतपान -->
+          <div class="karyakram-card">
+            <div class="karyakram-card-inner">
+              <div class="karyakram-event-name">विनायक एवं घृतपान</div>
+              <div class="karyakram-event-eng">Vinayak &amp; Ghritpan</div>
+              <div class="karyakram-ornament-divider">❧ ✦ ❧</div>
+              <div class="karyakram-date-hindi">सोमवार, 30 नवम्बर 2026</div>
+              <div class="karyakram-date-eng">Monday, 30 November 2026</div>
+              <div class="karyakram-time-box">
+                <span class="karyakram-time-hindi">प्रातः 11:15 बजे</span>
+                <span class="karyakram-time-eng">(11:15 AM)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event 3: संगीत संध्या -->
+          <div class="karyakram-card">
+            <div class="karyakram-card-inner">
+              <div class="karyakram-event-name">संगीत संध्या</div>
+              <div class="karyakram-event-eng">Sangeet Sandhya</div>
+              <div class="karyakram-ornament-divider">❧ ✦ ❧</div>
+              <div class="karyakram-date-hindi">सोमवार, 30 नवम्बर 2026</div>
+              <div class="karyakram-date-eng">Monday, 30 November 2026</div>
+              <div class="karyakram-time-box">
+                <span class="karyakram-time-hindi">सायं 6:00 बजे</span>
+                <span class="karyakram-time-eng">(6:00 PM)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event 4: मायरा -->
+          <div class="karyakram-card">
+            <div class="karyakram-card-inner">
+              <div class="karyakram-event-name">मायरा</div>
+              <div class="karyakram-event-eng">Mayra (Bhaat)</div>
+              <div class="karyakram-ornament-divider">❧ ✦ ❧</div>
+              <div class="karyakram-date-hindi">मंगलवार, 1 दिसम्बर 2026</div>
+              <div class="karyakram-date-eng">Tuesday, 1 December 2026</div>
+              <div class="karyakram-time-box">
+                <span class="karyakram-time-hindi">प्रातः 10:00 बजे</span>
+                <span class="karyakram-time-eng">(10:00 AM)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event 5: बारात आगमन -->
+          <div class="karyakram-card">
+            <div class="karyakram-card-inner">
+              <div class="karyakram-event-name">बारात आगमन</div>
+              <div class="karyakram-event-eng">Baraat Aagman</div>
+              <div class="karyakram-ornament-divider">❧ ✦ ❧</div>
+              <div class="karyakram-date-hindi">मंगलवार, 1 दिसम्बर 2026</div>
+              <div class="karyakram-date-eng">Tuesday, 1 December 2026</div>
+              <div class="karyakram-time-box">
+                <span class="karyakram-time-hindi">सायं 10:00 बजे</span>
+                <span class="karyakram-time-eng">(10:00 PM)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event 6: पाणिग्रहण संस्कार -->
+          <div class="karyakram-card karyakram-card-highlight">
+            <div class="karyakram-card-inner">
+              <div class="karyakram-event-name">पाणिग्रहण संस्कार</div>
+              <div class="karyakram-event-eng">Panigrahan Sanskar (Fere)</div>
+              <div class="karyakram-ornament-divider">❧ ✦ ❧</div>
+              <div class="karyakram-date-hindi">बुधवार, 2 दिसम्बर 2026</div>
+              <div class="karyakram-date-eng">Wednesday, 2 December 2026</div>
+              <div class="karyakram-time-box">
+                <span class="karyakram-time-hindi">प्रातः 9:00 बजे</span>
+                <span class="karyakram-time-eng">(9:00 AM)</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 5: DESTINATION & VENUE (THE GREAT BAHUBALI RESORT, BALOTRA) -->
+    <section class="venue-section" id="venue-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Wedding Venue</span>
+          <h2 class="section-title">THE GREAT BAHUBALI RESORT, BALOTRA</h2>
+          <div class="section-divider">
+            <span class="section-divider-icon">📍</span>
+          </div>
+          <p class="section-sub">Balotra, Rajasthan &bull; Where royal heritage hospitality meets grand celebrations</p>
+        </div>
+
+        <div class="venue-card">
+          <div class="venue-image-col">
+            <img src="./assets/images/resort_palace.jpg" alt="The Great Bahubali Resort Balotra Courtyard and Wedding Mandap" loading="lazy">
+            <div class="venue-image-overlay">
+              <div class="venue-image-badge">✨ THE GREAT BAHUBALI RESORT, BALOTRA</div>
+            </div>
+          </div>
+
+          <div class="venue-info-col">
+            <h3 class="venue-name">THE GREAT BAHUBALI RESORT, BALOTRA</h3>
+            <div class="venue-city">Balotra, Rajasthan 344022</div>
+
+            <p class="venue-address">
+              Nestled in the historic land of Balotra, The Great Bahubali Resort offers majestic Rajasthani palace courtyards, illuminated lush lawns, and authentic royal hospitality for our wedding festivities.
+            </p>
+
+            <div class="venue-highlights">
+              <div class="venue-highlight-item">
+                <span>🏰</span> Heritage Architecture
+              </div>
+              <div class="venue-highlight-item">
+                <span>🚗</span> Ample Valet Parking
+              </div>
+              <div class="venue-highlight-item">
+                <span>✈️</span> Jodhpur Airport (~105 km)
+              </div>
+              <div class="venue-highlight-item">
+                <span>🚆</span> Balotra Junction (~5 km)
+              </div>
+            </div>
+
+            <div class="venue-actions">
+              <a href="https://maps.google.com/?q=The+Great+Bahubali+Resort+Balotra" target="_blank" rel="noopener noreferrer" class="btn-royal-gold" style="font-size: 0.95rem; padding: 0.75rem 1.8rem;">
+                <span>🗺️</span> Open Google Maps
+              </a>
+              <a href="https://www.google.com/maps/dir/?api=1&destination=The+Great+Bahubali+Resort+Balotra" target="_blank" rel="noopener noreferrer" class="btn-secondary-gold">
+                <span>🧭</span> Get Directions
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+<!------------------------Section 6 : -Contact Section------------------------>    
+<section id="contact-section" class="contact-section">
+  <div class="family-contact-card">
+    <h2>Contact Our Family</h2>
+    <p>Monika & Nikita’s Family</p>
+    <p class="contact-intro">
+      For wedding details and assistance, please contact us.
+    </p>
+
+    <div class="family-phone-list">
+      <div class="phone-row">
+        <span class="phone-label">Ratanlal Rathi</span>
+        <a href="tel:+919828677900">+91 9828677900</a>
+      </div>
+
+      <div class="phone-row">
+        <span class="phone-label">Anil Kumar Rathi</span>
+        <a href="tel:+919414469965">+91 9414469965</a>
+      </div>
+
+      <div class="phone-row">
+        <span class="phone-label">Balkishan Rathi</span>
+        <a href="tel:+919602589118">+91 9602589118</a>
+      </div>
+    </div>
+  </div>
+</section>
+    
+    <!-- FOOTER & FAMILY REGARDS -->
+    <footer class="wedding-footer">
+      <div class="container">
+        
+        <div class="footer-family-regards">
+          <div class="footer-regards-title">॥ दर्शनाभिलाषी ॥</div>
+          <p class="footer-regards-names">
+            समस्त परिवार एवं रिश्तेदार<br>
+            All near and dear family members cordially await your auspicious arrival!
+          </p>
+        </div>
+
+        <div class="footer-reopen-envelope">
+          <button class="btn-reopen" id="btn-reopen-envelope">
+            <span>✉️</span> Close &amp; Re-Open Envelope
+          </button>
+        </div>
+
+        <div class="footer-credit">
+          With Love • Monika &amp; Harshitji • Nikita &amp; Shivamji • THE GREAT BAHUBALI RESORT, BALOTRA • 02 December 2026
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- Mobile Bottom Quick-Action Nav Dock (Visible on Mobile Phones & Tablets) -->
+    <nav class="mobile-bottom-dock" aria-label="Mobile Navigation">
+      <a href="#hero-section" class="dock-item" aria-label="Wedding">
+        <span class="dock-icon">👑</span>
+        <span class="dock-label">Wedding</span>
+      </a>
+      <a href="#countdown-section" class="dock-item" aria-label="Date">
+        <span class="dock-icon">⏳</span>
+        <span class="dock-label">Date</span>
+      </a>
+      <a href="#story-section" class="dock-item" aria-label="Story">
+        <span class="dock-icon">📖</span>
+        <span class="dock-label">Story</span>
+      </a>
+      <a href="#karyakram-section" class="dock-item" aria-label="कार्यक्रम">
+        <span class="dock-icon">🪘</span>
+        <span class="dock-label">कार्यक्रम</span>
+      </a>
+      <a href="#venue-section" class="dock-item" aria-label="Venue">
+        <span class="dock-icon">📍</span>
+        <span class="dock-label">Venue</span>
+      </a>
+      <a href="#share-section" class="dock-item" aria-label="Share">
+        <span class="dock-icon">📲</span>
+        <span class="dock-label">Share</span>
+      </a>
+    </nav>
+
+  </main>
+
+  <!-- Main Javascript Logic -->
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>
