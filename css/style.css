@@ -104,3 +104,51 @@
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Elaichi-green page background */
+body {
+  background-color: #DCE8C5;
+  color: #2A1518;
+}
+
+/* Make the main sections use the new color palette */
+.karyakram-section,
+.wedding-footer {
+  background: linear-gradient(
+    135deg,
+    #DCE8C5 0%,
+    #F0F3D9 50%,
+    #DCE8C5 100%
+  );
+  color: #2A1518;
+}
+
+/* Keep the invitation envelope maroon */
+.envelope-wrapper {
+  background: #3E0712;
+  color: #FFF9E9;
+}
+
+/* Ensure text inside the envelope remains readable */
+.envelope-wrapper h1,
+.envelope-wrapper h2,
+.envelope-wrapper h3,
+.envelope-wrapper p,
+.envelope-wrapper span,
+.envelope-wrapper div {
+  color: #FFF9E9;
+}
+
+/* Highlight important text with gold */
+.karyakram-card-highlight .karyakram-event-name,
+.karyakram-card-highlight .karyakram-date-eng,
+.karyakram-card-highlight .karyakram-time-eng {
+  color: #FFF9E9;
+}
+
+.story-tab-btn.active,
+.story-tab-btn:hover {
+  background: linear-gradient(135deg, #D4AF37, #AA821D);
+  color: #2A1518;
+}
+
