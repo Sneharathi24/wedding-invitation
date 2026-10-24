@@ -66,16 +66,22 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   if (enterBtn) {
-    enterBtn.addEventListener('click', (e) => {
-      e.preventDefault();
-      weddingMainSite.classList.add('is-revealed');
-      
-      const target = document.getElementById('hero-section');
-      if (target) {
-        target.scrollIntoView({ behavior: 'smooth' });
-      }
-    });
-  }
+  enterBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    if (!weddingMainSite) return;
+
+    weddingMainSite.classList.add('is-revealed');
+    enterBtn.disabled = true;
+
+    const target = document.getElementById('hero-section');
+    if (target) {
+      setTimeout(() => {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 100);
+    }
+  });
+}
 
   if (reopenBtn) {
     reopenBtn.addEventListener('click', () => {
