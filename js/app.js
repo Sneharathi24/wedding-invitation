@@ -65,23 +65,28 @@ document.addEventListener('DOMContentLoaded', () => {
     tapInstruction.addEventListener('touchstart', openEnvelope, { passive: true });
   }
 
-  if (enterBtn) {
+ 
+if (enterBtn && weddingMainSite) {
   enterBtn.addEventListener('click', (e) => {
     e.preventDefault();
 
-    if (!weddingMainSite) return;
-
     weddingMainSite.classList.add('is-revealed');
-    enterBtn.disabled = true;
 
-    const target = document.getElementById('hero-section');
-    if (target) {
-      setTimeout(() => {
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }, 100);
-    }
+    requestAnimationFrame(() => {
+      weddingMainSite.style.maxHeight = 'none';
+      weddingMainSite.style.overflow = 'visible';
+
+      const target = document.getElementById('hero-section');
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
   });
 }
+
 
   if (reopenBtn) {
     reopenBtn.addEventListener('click', () => {
