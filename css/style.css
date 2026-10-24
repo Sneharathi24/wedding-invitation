@@ -496,7 +496,7 @@ button, a {
   display: none;
   margin-top: clamp(1rem, 2.5vh, 1.6rem);
   text-align: center;
-  animation: fadeInDown 0.8s ease 1s forwards;
+  animation: fadeInDown 0.8s ease 0.2s forwards;
   width: 100%;
 }
 
