@@ -494,10 +494,13 @@ button, a {
 /* "ENTER OUR WEDDING" Button */
 .enter-wedding-cta {
   display: none;
+  position: relative;
+  z-index: 30;
   margin-top: clamp(1rem, 2.5vh, 1.6rem);
   text-align: center;
   animation: fadeInDown 0.8s ease 0.2s forwards;
   width: 100%;
+  pointer-events: auto;
 }
 
 .envelope-stage.is-open + .tap-instruction {
